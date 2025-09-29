@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+<section class="card">
+<header class="card-head">
+<div class="brand">
+<div class="brand-mark">ST</div>
+<div class="brand-text">
+<div class="brand-title">Calculator</div>
+<div class="brand-sub">Precision, speed, style</div>
+</div>
+</div>
+<div class="head-actions">
+<button id="themeToggle" class="icon-btn" aria-label="Toggle theme">🌗</button>
+</div>
+</header>
+
+
+<div class="screen" role="region" aria-live="polite">
+<div id="prev" class="screen-prev"></div>
+<div id="curr" class="screen-curr">0</div>
+</div>
+
+
+<div class="pad" role="group" aria-label="Calculator keypad">
+<button class="key key-ac" data-action="clear">AC</button>
+<button class="key" data-action="back">⌫</button>
+<button class="key" data-value="%">%</button>
+<button class="key key-op" data-value="/">÷</button>
+
+
+<button class="key" data-value="7">7</button>
+<button class="key" data-value="8">8</button>
+<button class="key" data-value="9">9</button>
+<button class="key key-op" data-value="*">×</button>
+
+
+<button class="key" data-value="4">4</button>
+<button class="key" data-value="5">5</button>
+<button class="key" data-value="6">6</button>
+<button class="key key-op" data-value="-">−</button>
+
+
+<button class="key" data-value="1">1</button>
+<button class="key" data-value="2">2</button>
+<button class="key" data-value="3">3</button>
+<button class="key key-op" data-value="+">+</button>
+
+
+<button class="key key-zero" data-value="0">0</button>
+<button class="key" data-value=".">.</button>
+<button class="key key-eq" data-action="equals">=</button>
+</div>
+
+
+<footer class="card-foot">Tip: try keyboard input — numbers, + - * / Enter Backspace Esc</footer>
+</section>
+</main>
+<script src="index.js"></script>
+</body>
+</html>
